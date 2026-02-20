@@ -12,15 +12,12 @@ function printName(name){
 
 printName("Arjun");
 
-
-
 function sum(a, b){
     let add = a+b;
     console.log(add);
 }
 
 sum(10,20)
-
 
 //return the value from functions
 function square(x){
