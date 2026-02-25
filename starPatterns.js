@@ -93,3 +93,23 @@ for (let i = 0; i < n; i++) {
   //print row after inner loop 
   console.log(row);
 }
+
+console.log();
+
+// *****
+// ****
+// ***
+// **
+// *
+
+n = 5;
+//row
+for (let i = 0; i < n; i++) {
+    let row = '';
+  //col 
+  for (let j = 0; j <(n-i); j++) {
+     row = row + ("*");
+  }
+  //print row after inner loop 
+  console.log(row);
+}
