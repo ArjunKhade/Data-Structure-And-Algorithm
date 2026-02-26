@@ -186,3 +186,4 @@ for (let i = 0; i < n; i++) {
   //print row after inner loop 
   console.log(row);
 }
+
