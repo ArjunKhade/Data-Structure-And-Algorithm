@@ -1,7 +1,27 @@
-/**
- * @param {ListNode} head
- * @return {ListNode}
- */
+
+// Recursive
+var swapPairs = function(head) {
+    // Base case: empty lists and single-node lists do not need swapping.
+    if(!head || !head.next) return head;
+
+    // l is the first node in the current pair, r is the second node.
+    let l = head;
+    let r = head.next;
+
+     // Swap the remaining list first, then attach it after l.
+     l.next = swapPairs(r.next);
+
+     // Put r before l to complete the current pair swap.
+     r.next= l;
+
+     // r becomes the new head of this swapped pair.
+     return r;
+
+};
+
+
+
+// Iterative 
 var swapPairs = function(head) {
     // Empty lists and single-node lists are already "swapped".
     if(!head || !head.next) return head;
