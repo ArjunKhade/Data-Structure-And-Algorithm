@@ -16,7 +16,7 @@ public class MergeSortSolution {
 		
 		//divide the arrays
 		int [] left = Arrays.copyOfRange(arr, 0, mid);
-		int []	 right = Arrays.copyOfRange(arr, mid, arr.length);
+		int [] right = Arrays.copyOfRange(arr, mid, arr.length);
 		
 		//call recursive for left
 		mergeSort(left);
@@ -25,7 +25,7 @@ public class MergeSortSolution {
 		mergeSort(right);
 		
 		//conquor the array
-		merge(arr, left,right);
+		merge(arr, left, right);
 	}
 
 
